@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Jobs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="project04_06.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="jobsByHtml.html">
+</head>
+
+<body>
+    <script src="https://kit.fontawesome.com/9a20da4e07.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/9a20da4e07.js" crossorigin="anonymous"></script>
+    <div class="container-fluid shadow">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-12 col-md-9">
+                <nav class="navbar navbar-expand-sm ">
+                    <div class="container-fluid " id="navBar">
+                        <a class="navbar-brand" href="#"><img src="pabjobs-logo.png" width="150px" height="60px"></a>
+                        <div> <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapsibleNavbar">
+                                <span class="navbar-toggler-icon"></span>
+                            </button></div>
+
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <div style="margin-left: 30px;">
+                                <ul class="navbar-nav" style="font-weight: 800;color: #270d44;">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="homePabJobs.html" style="font-weight: bold;">Home</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- <li class="nav-item dropdown"> -->
+                                <div style="margin-left: 30px; " class="">
+                                    <ul class="navbar-nav" style="font-weight: 500;color: #270d44;">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="browseJobs.html" style="font-weight: bold; ">Browse Jobs  <i class="fa-solid fa-caret-down"></i> </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            <!-- </li> -->
+                            <!-- <li class="nav-item dropdown"> -->
+                                <div style="margin-left: 30px;">
+                                    <ul class="navbar-nav" style="font-weight: 500;color: #270d44;">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="JobsPab.html" style="font-weight: bold;">Jobs <i class="fa-solid fa-caret-down"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            <!-- </li> -->
+                            <!--             
+                <li class="nav-item dropdown"> -->
+                    <div style="margin-left: 30px;">
+                        <ul class="navbar-nav" style="font-weight: 500;color: #270d44;">
+                            <li class="nav-item">
+                                <a class="nav-link" href="" style="font-weight: bold;">Services <i class="fa-solid fa-caret-down"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                            <!-- </li> -->
+                            <div style="margin-left: 30px;">
+                                <ul class="navbar-nav" style="font-weight: 500;color: #270d44;">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="PaymentPab.html" style="font-weight: bold;">Payments <i class="fa-solid fa-caret-down"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div> <i class="fa-regular fa-bell"
+                                    style="font-size:xx-large; margin-left: 10px; color: #270d44;"></i></div>
+                            <div style="margin-left: 20px; font-size: xx-large; color: #270d44;"> <i
+                                    class="fa-sharp fa-solid fa-circle-user"></i>
+                                <i class="fa-solid fa-caret-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="container blayer p-1">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-12 col-md-8 ">
+                <div class="row">
+                    <div class="col-5"> </div>
+                    <div class="col-2">
+                        <p>Home>Jobs</p>
+                    </div>
+                    <div class="col-4"> </div>
+                </div>
+                <div class="input-group mb-3 p-2">
+
+                    <div class="col-md-4 col-12 d-flex flex-row w-50 "
+                        style="background-color: white; height: 40px; width: 150px; border-radius: 10px;">
+                        <span class="px-1 mt-1"> <i class="fa-solid fa-magnifying-glass "></i> </span>
+                        <span class="px-5 mt-1 "><input class="w-100 dropdown-toggle"
+                                style="border: none; font-size: small; width: 250px;" type="text"
+                                placeholder="job Title, Skills or company "></span>
+                        <span class="px-5"> <i class="fa-solid fa-caret-down"></i></span>
+                    </div>
+                    <div class="col-md-4 col-12 d-flex flex-row w-50"
+                        style="background-color: white; height: 40px; width: 150px; border-radius: 10px;">
+                        <span class="px-1 mt-1"> <i class="fa-solid fa-location-dot"></i> </span>
+                        <span class="px-5 mt-1 "><input class="w-100 dropdown-toggle"
+                                style="border: none; font-size: small; width: 250px;" type="text"
+                                placeholder="job Title, Skills or company "></span>
+                        <span class="px-5"> <i class="fa-solid fa-caret-down"></i></span>
+                    </div>
+                </div>
+                <div class=" col-md-2"> </div>
+                <div class="row m-1">
+                    <div class="col-5 "> </div>
+                    <div class="col-5">
+                        <button style="background-color: #270d44; border-radius: 5px; color: #ffff;">Search</button>
+                    </div>
+                    <div class="col-4"> </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-9 col-12">
+                <div class="row ">
+
+
+                    <div class="col-md-2 ">
+                        <button class="form-control dropdown-toggle"
+                            style="color: #270d44; background-color: #f8f2f8; font-size: small; border: 1px solid black;">Experiece</button>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="form-control dropdown-toggle"
+                            style="color: #270d44; background-color: #f8f2f8;font-size: small;border: 1px solid black;">Location</button>
+                    </div>
+
+
+                    <div class="col-md-2">
+                        <button class="form-control dropdown-toggle"
+                            style="color: #270d44; background-color: #f8f2f8;font-size: small;border: 1px solid black;">Industry</button>
+                    </div>
+                    <div class="col-md-2 ">
+                        <button class="form-control dropdown-toggle"
+                            style="color: #270d44; background-color: #f8f2f8;font-size: small;">Designation</button>
+                    </div>
+                    <div class="col-md-2 ">
+                        <button class="form-control dropdown-toggle"
+                            style="color: #270d44; background-color: #f8f2f8;font-size: small;">Education</button>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="form-control dropdown-toggle"
+                            style="color: #270d44; background-color: #f8f2f8;font-size: small;">Skills</button>
+                    </div>
+                </div>
+                <p style="font-size: small;color: gray; margin-top: 20px;">Showing 69 results for 'Graphic Designing'</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-3 col-12 ">
+        <div class="row">
+
+
+            <!-- <div class=" container ">
+                <div class="row"> -->
+            <div class="col-1"></div>
+            <div class="col-md-4 col-12 mt-1">
+                <div class=" card ">
+                    <div class="d-flex flex-row ">
+                        <div>
+                            <h5>Graphic Designer</h5>
+                        </div>
+                        <div>
+                            <p class="px-5" style="font-weight: bold;">4.5-6LPA</p>
+                        </div>
+                    </div>
+                    <p style="font-size: small;">Angel Broking</p>
+                    <p style="font-size: small;">Full time <br> Hyderabad / Secunderabad , Telangana<br> Fresher
+                    </p>
+                    <p style="text-align: end; font-size: xx-small;">Published One day ago</p>
+                </div>
+
+                <div class=" card  ">
+                    <div class="d-flex flex-row ">
+                        <div>
+                            <h5>Graphic Designer</h5>
+                        </div>
+                        <div>
+                            <p class="px-5" style="font-weight: bold;">4.5-6LPA</p>
+                        </div>
+                    </div>
+                    <p style="font-size: small;">Angel Broking</p>
+                    <p style="font-size: small;">Full time <br> Hyderabad / Secunderabad , Telangana<br> Fresher
+                    </p>
+                    <p style="text-align: end; font-size: xx-small;">Published One day ago</p>
+                </div>
+
+                <div class=" card  ">
+                    <div class="d-flex flex-row ">
+                        <div>
+                            <h5>Graphic Designer</h5>
+                        </div>
+                        <div>
+                            <p class="px-5" style="font-weight: bold;">4.5-6LPA</p>
+                        </div>
+                    </div>
+                    <p style="font-size: small;">Angel Broking</p>
+                    <p style="font-size: small;">Full time <br> Hyderabad / Secunderabad , Telangana<br> Fresher
+                    </p>
+                    <p style="text-align: end; font-size: xx-small;">Published One day ago</p>
+                </div>
+
+                <div class=" card  ">
+                    <div class="d-flex flex-row ">
+                        <div>
+                            <h5>Graphic Designer</h5>
+                        </div>
+                        <div>
+                            <p class="px-5" style="font-weight: bold;">4.5-6LPA</p>
+                        </div>
+                    </div>
+                    <p style="font-size: small;">Angel Broking</p>
+                    <p style="font-size: small;">Full time <br> Hyderabad / Secunderabad , Telangana<br> Fresher
+                    </p>
+                    <p style="text-align: end; font-size: xx-small;">Published One day ago</p>
+                </div>
+
+                <div class=" card ">
+                    <div class="d-flex flex-row ">
+                        <div>
+                            <h5>Graphic Designer</h5>
+                        </div>
+                        <div>
+                            <p class="px-5" style="font-weight: bold;">4.5-6LPA</p>
+                        </div>
+                    </div>
+                    <p style="font-size: small;">Angel Broking</p>
+                    <p style="font-size: small;">Full time <br> Hyderabad / Secunderabad , Telangana<br> Fresher
+                    </p>
+                    <p style="text-align: end; font-size: xx-small;">Published One day ago</p>
+                </div>
+
+                <div class=" card  ">
+                    <div class="d-flex flex-row ">
+                        <div>
+                            <h5>Graphic Designer</h5>
+                        </div>
+                        <div>
+                            <p class="px-5" style="font-weight: bold;">4.5-6LPA</p>
+                        </div>
+                    </div>
+                    <p style="font-size: small;">Angel Broking</p>
+                    <p style="font-size: small;">Full time <br> Hyderabad / Secunderabad , Telangana<br> Fresher
+                    </p>
+                    <p style="text-align: end; font-size: xx-small;">Published One day ago</p>
+                </div>
+            </div>
+            <!-- </div>
+            </div> -->
+
+            <!-- <div class=" container">
+                <div class="row"> -->
+            <div class="col-md-5  col-12 mt-2 h-25 p-2 ">
+                <div class="card">
+                    <div class="d-flex flex-row px-3">
+                        <div class="px-3" style="border-right: 1px solid black;">
+                            <img src="">
+                            <h5>Graphic Designer</h5>
+                            <p>wipro</p>
+                            <p style="font-size: small;color: blueviolet;">Show More Jobs In the company</p>
+                        </div>
+                        <div class="px-3">
+                            <h5>5-10 LPA</h5>
+                            <p>Hyderabad/ Secunderabad , Telangana</p>
+                            <p>1-3 years</p>
+
+                        </div>
+                    </div>
+
+                    <hr>
+                    <div class="row px-5">
+                        <div class="col-6">
+                            <p>Posted :Few Hours Ago <br> Opening:1 <br> Job Application: 580</p>
+                        </div>
+                        <div class="col-6"><Button class="btn btn-primary">Apply Now </Button></div>
+                    </div>
+                </div>
+
+                <div class="card p-2">
+                    <h5 style="color: #270d44; font-size: small;"> Job Desciption</h5>
+                    <h6 class="" style="color: #270d44; font-size: small;"> Roles and Responsibilites</h6>
+                    <p style="color: #270d44; font-size: small;">
+                        Planning concepts by studying relevent information and materials <br> Illustrating concepts by
+                        designing examples of an assignmrnt size,type size and style and <br> submitting them for
+                        approval<br>
+                        Creting a wide range of graphics and layouts for products ,company logos <br> socal media
+                        banners, artwork and websits with software such as photologo.<br>
+                        Creating new graphics for socal media ,Email mailing Broadcasts lables & stickers for <br>
+                        products. Catogery ,etc .using adobe tools like photo shop ,illustarrtion and design <br>
+                        constructing with network, web design ,markting ,paintings and configure as necessary .<br>
+                        products. Catogery ,etc .using adobe tools like photo shop ,illustarrtion and design</br>
+                        rewiving the layouts and suggesitions and suggesting imporvements wirh necessary.
+                    </p>
+                    <h5 style="color: #270d44; font-size: small;"> Skills and Responsibilites:</h5>
+                    <p style="color: #270d44; font-size: small;">
+                        Experience as a graphic designer or in a reational field.<br> Demostriate graphic skills witha
+                        strong portfolio.<br>
+                        Proficiency with require desktop publishing tools ,including Photoshop is desingn and <br>
+                        lillustrate <br>
+                        A strong eye for visual compsition . <br> Effective time management skills and ability to meet
+                        deadlines,<br>
+                        Able to give and recive construction crision<br> iciency with require desktop publishing tools
+                        ,including Photoshop is desingn
+                    </p>
+
+                </div>
+
+            </div>
+            <!-- </div>
+            </div> -->
+        </div>
+
+    </div>
+
+    <div class=" container-fluid Footer11 p-1">
+        <div class="row">
+            <div class="col-12 col-md-1"></div>
+            <div class="d-flex flex-column col-12 col-md-3 ">
+                <img src="pab bottom-logoFooter.jpg" width="150px" height="60px" style="margin: 10px;">
+                <p>We provide a direct access to the walk-in <br> opporchunitieas available on the site. Results
+                    can
+                    <br> be filtered on the work experiences , venue , form <br> locations , employer type ,and
+                    date
+                    range.
+                </p>
+                <div>
+                    <p>Toll Free Number:</p>
+                    <div class="d-flex flex-row"> <i class="fa-light fa-phone"></i>
+                        <p>9885097435870</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="theUIs col-12 col-md-2">
+
+                <p>For Candidates</p>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">>Candate Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">>My Resume </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">>Applied Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">>job Alert</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">>Change Password</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="theUIs col-12 col-md-2">
+                <p>Jobs</p>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">>All Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">>Company jobs </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">>Category Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">>Location jons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">>Designation Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">>Skill Jobs</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="d-flex flex-column col-12 col-md-3">
+                <div class="theUIs">
+                    <p>Browse jobs</p>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">>Companies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">>Browse Jobs </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">> Jobs</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="theUIs">
+                    <p>Information</p>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">>Terms& conditions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">>Privacy Policy </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">> Fraud Alert</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- </div> -->
+            <hr class="col-12 ">
+            <div class=" container  ">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-12 col-md-3">
+                        <p style="font-size: small;">All rights reserved @ 2022 PAB.Jobs</p>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <p>Designed by <span>@ Perfex Technologies</span></p>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <i class="fa-brands fa-youtube" style="padding: 1px; "></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
